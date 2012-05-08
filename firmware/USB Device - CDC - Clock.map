@@ -1,0 +1,114 @@
+MPLINK 4.40, Linker
+Linker Error Map File - Created Tue May 01 18:06:58 2012
+
+*Warning* - This is only a partial map file due to a link time error.
+   Only sections which were allocated prior to the error are shown below.
+
+CODEPAGES:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+bootloader     0x0000     0x9fff           _entry_scn     0x0000     0x0006
+                                 HIGH_INTERRUPT_VECTOR     0x0008     0x0006
+                                 LOW_INTERRUPT_VECTOR     0x0018     0x0006
+
+      page     0xa000     0xfc00 REMAPPED_RESET_VECTOR     0xa000     0x0006
+                                 REMAPPED_HIGH_INTERRUPT_VECTOR     0xa008     0x0006
+                                 REMAPPED_LOW_INTERRUPT_VECTOR     0xa018     0x0006
+                                               .cinit     0xa01e     0x000e
+                                         .code_main.o     0xa02c     0x2cb2
+                                   .code_usb_device.o     0xccde     0x127c
+                                         .code_oled.o     0xdf5a     0x07e6
+                                 .code_usb_function_cdc.o     0xe740     0x04c6
+                                       .code_mtouch.o     0xec06     0x025e
+                                      .romdata_oled.o     0xee64     0x01db
+                                 .code_RtccWriteTimeDate.o     0xf040     0x0174
+                                               STDLIB     0xf1b4     0x0134
+                                 .code_RtccWriteAlrmTimeDate.o     0xf2e8     0x012a
+                                   .code_soft_start.o     0xf412     0x00f0
+                                 .code_RtccReadTimeDate.o     0xf502     0x00d8
+                                 .romdata_usb_descriptors.o     0xf5da     0x00c9
+                                         .stringtable     0xf6a3     0x00a7
+                                      .romdata_main.o     0xf74a     0x00a1
+                                           _cinit_scn     0xf7ec     0x009e
+                                               STRING     0xf88a     0x0082
+                                                 PROG     0xf90c     0x0080
+                                 .code_RtccReadAlrmTimeDate.o     0xf98c     0x0070
+                                 .code_RtccSetAlarmRpt.o     0xf9fc     0x005e
+                                 .code_RtccSetChimeEnbl.o     0xfa5a     0x0056
+                                 .code_RtccSetAlarmRptCount.o     0xfab0     0x0050
+                                 .code_RtccSetCalibration.o     0xfb00     0x0044
+                                     .code_RtccWrOn.o     0xfb44     0x0034
+                                     .code_fxd1616u.o     0xfb78     0x002c
+                                                CTYPE     0xfba4     0x0024
+                                                .code     0xfbc8     0x0020
+
+    config     0xfff8     0xffff  .config_fff8_main.o     0xfff8     0x0001
+                                  .config_fff9_main.o     0xfff9     0x0001
+                                  .config_fffa_main.o     0xfffa     0x0001
+                                  .config_fffb_main.o     0xfffb     0x0001
+                                  .config_fffc_main.o     0xfffc     0x0001
+                                  .config_fffd_main.o     0xfffd     0x0001
+                                  .config_fffe_main.o     0xfffe     0x0001
+                                  .config_ffff_main.o     0xffff     0x0001
+
+     devid     0xfffe     0xffff                                           
+
+
+SHAREBANKS:
+
+DATABANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+      gpr0     0x0060     0x00ff  .udata_usb_device.o     0x0060     0x003a
+
+      gpr1     0x0100     0x01ff        .udata_main.o     0x0100     0x00d6
+
+      gpr2     0x0200     0x02ff                                           
+
+      gpr3     0x0300     0x03ff                                           
+
+      gpr4     0x0400     0x04ff              USB_BDT     0x0400     0x0050
+                                 .udata_usb_function_cdc.o     0x0450     0x00a8
+
+      gpr5     0x0500     0x05ff                                           
+
+      gpr6     0x0600     0x06ff                                           
+
+      gpr7     0x0700     0x07ff                                           
+
+      gpr8     0x0800     0x08ff                                           
+
+      gpr9     0x0900     0x09ff                                           
+
+     gpr10     0x0a00     0x0aff                                           
+
+     gpr11     0x0b00     0x0bff                                           
+
+     gpr12     0x0c00     0x0cff                                           
+
+     gpr13     0x0d00     0x0dff               .stack     0x0d00     0x0100
+
+     gpr14     0x0e00     0x0ebf                                           
+
+     sfr14     0x0ec0     0x0eff          SFR_BANKED0     0x0ec6     0x000e
+                                          SFR_BANKED1     0x0ed7     0x0008
+                                          SFR_BANKED2     0x0ee7     0x0004
+                                          SFR_BANKED3     0x0eec     0x0003
+                                          SFR_BANKED4     0x0ef2     0x0002
+                                          SFR_BANKED5     0x0ef6     0x0002
+                                          SFR_BANKED6     0x0efb     0x0005
+
+     sfr15     0x0f00     0x0f5f          SFR_BANKED7     0x0f26     0x0014
+                                          SFR_BANKED8     0x0f3c     0x0007
+                                          SFR_BANKED9     0x0f48     0x0008
+                                         SFR_BANKED10     0x0f52     0x000e
+
+
+ACCESSBANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+ accessram     0x0000     0x005f                                           
+
+ accesssfr     0x0f60     0x0fff        SFR_UNBANKED0     0x0f60     0x00a0
+
+
