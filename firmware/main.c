@@ -916,7 +916,7 @@ void ProcessIO(void)
 	}
 	if(!executionTick&&alarmcnt)
 	{
-		strcpypgm2ram(cbuf,(const far rom char *)"** ALARM **");
+		strcpypgm2ram(cbuf,(const far rom char *)"** ALARMA **");
 		if((++alarmcnt%10)>5) oledPutString((unsigned char *)cbuf,7,30);
 		else oledPutStringINV((unsigned char *)cbuf,7,30);
 	}	
@@ -1006,7 +1006,7 @@ void ProcessIO(void)
 								cerr=1;							// command error
 								
 					}
-					if(cerr) strcpypgm2ram(outbufend,(const far rom char *)"ERR");
+					if(cerr) strcpypgm2ram(outbufend,(const far rom char *)"ERROR");
 					if(nl) strcatc(outbuf,'\n'),strcatc(outbuf,'\r');
 					cmdstr[0]=0;
 				}

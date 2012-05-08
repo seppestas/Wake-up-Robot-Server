@@ -1,29 +1,12 @@
 MPLINK 4.40, Linker
-Linker Map File - Created Tue May 08 15:26:31 2012
+Linker Map File - Created Tue May 08 17:13:36 2012
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
-  .code_usb_descriptors.o       code   0x000006    program   0x000000
-        .idata_mtouch.o_i    romdata   0x000006    program   0x000000
-          .idata_oled.o_i    romdata   0x000006    program   0x000000
-      .idata_fxd0808u.o_i    romdata   0x000006    program   0x000000
-        .idata___init.o_i    romdata   0x000006    program   0x000000
-      .idata_pw1setoc.o_i    romdata   0x000006    program   0x000000
-      .idata_pw1setdc.o_i    romdata   0x000006    program   0x000000
-       .idata_pw1open.o_i    romdata   0x000006    program   0x000000
-.idata_RtccWriteAlrmTimeDate.o_i    romdata   0x000006    program   0x000000
-.idata_RtccSetAlarmRpt.o_i    romdata   0x000006    program   0x000000
-.idata_RtccReadAlrmTimeDate.o_i    romdata   0x000006    program   0x000000
     HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
           .idata_main.o_i    romdata   0x00000e    program   0x000008
- .idata_RTCCInitClock.o_i    romdata   0x000016    program   0x000000
-.idata_RtccReadTimeDate.o_i    romdata   0x000016    program   0x000000
-      .idata_RtccWrOn.o_i    romdata   0x000016    program   0x000000
-.idata_RtccWriteTimeDate.o_i    romdata   0x000016    program   0x000000
-            .code_c018i.o       code   0x000016    program   0x000000
-         .idata_c018i.o_i    romdata   0x000016    program   0x000000
      LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
     REMAPPED_RESET_VECTOR       code   0x00a000    program   0x000006
            .code___init.o       code   0x00a006    program   0x000002
@@ -36,27 +19,17 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x00a018    program   0x000006
  .code_usb_function_cdc.o       code   0x00cc7e    program   0x0004c6
            .code_mtouch.o       code   0x00d144    program   0x00025e
           .romdata_oled.o    romdata   0x00d3a2    program   0x0001db
-      .romdata_fxd0808u.o    romdata   0x00d57d    program   0x000000
-.romdata_RtccWriteTimeDate.o    romdata   0x00d57d    program   0x000000
-       .romdata_pw1open.o    romdata   0x00d57d    program   0x000000
-.romdata_RtccWriteAlrmTimeDate.o    romdata   0x00d57d    program   0x000000
- .romdata_RTCCInitClock.o    romdata   0x00d57d    program   0x000000
-.idata_usb_function_cdc.o_i    romdata   0x00d57d    program   0x000000
-.romdata_RtccReadAlrmTimeDate.o    romdata   0x00d57d    program   0x000000
-      .romdata_RtccWrOn.o    romdata   0x00d57d    program   0x000000
-.romdata_usb_function_cdc.o    romdata   0x00d57d    program   0x000000
 .romdata_RtccReadTimeDate.o    romdata   0x00d57d    program   0x000000
-.romdata_RtccSetAlarmRpt.o    romdata   0x00d57d    program   0x000000
-    .romdata_usb_device.o    romdata   0x00d57d    program   0x000000
-      .romdata_pw1setdc.o    romdata   0x00d57d    program   0x000000
-        .romdata_mtouch.o    romdata   0x00d57d    program   0x000000
-    .idata_usb_device.o_i    romdata   0x00d57d    program   0x000000
-    .romdata_soft_start.o    romdata   0x00d57d    program   0x000000
     .idata_soft_start.o_i    romdata   0x00d57d    program   0x000001
-      .romdata_pw1setoc.o    romdata   0x00d57d    program   0x000000
-.idata_usb_descriptors.o_i    romdata   0x00d57d    program   0x000000
-        .romdata___init.o    romdata   0x00d57d    program   0x000000
+    .romdata_soft_start.o    romdata   0x00d57d    program   0x000000
+        .romdata_mtouch.o    romdata   0x00d57d    program   0x000000
+      .romdata_RtccWrOn.o    romdata   0x00d57d    program   0x000000
+.romdata_RtccWriteTimeDate.o    romdata   0x00d57d    program   0x000000
+      .romdata_pw1setdc.o    romdata   0x00d57d    program   0x000000
+ .romdata_RTCCInitClock.o    romdata   0x00d57d    program   0x000000
          .romdata_c018i.o    romdata   0x00d57d    program   0x000000
+.romdata_usb_function_cdc.o    romdata   0x00d57d    program   0x000000
+    .idata_usb_device.o_i    romdata   0x00d57d    program   0x000000
 .code_RtccWriteTimeDate.o       code   0x00d57e    program   0x000174
                    STDLIB       code   0x00d6f2    program   0x000134
 .code_RtccWriteAlrmTimeDate.o       code   0x00d826    program   0x00012a
@@ -67,17 +40,44 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x00a018    program   0x000006
                _cinit_scn       code   0x00dc82    program   0x00009e
                    STRING       code   0x00dd20    program   0x000082
 .code_RtccReadAlrmTimeDate.o       code   0x00dda2    program   0x000070
-             .stringtable    romdata   0x00de12    program   0x000062
-         .code_pw1setdc.o       code   0x00de74    program   0x00005e
-  .code_RtccSetAlarmRpt.o       code   0x00ded2    program   0x00005e
-         .code_pw1setoc.o       code   0x00df30    program   0x000058
-         .code_RtccWrOn.o       code   0x00df88    program   0x000034
-          .code_pw1open.o       code   0x00dfbc    program   0x00002a
-                    CTYPE       code   0x00dfe6    program   0x000024
-                    .code       code   0x00e00a    program   0x000020
-             _startup_scn       code   0x00e02a    program   0x00001c
-         .code_fxd0808u.o       code   0x00e046    program   0x00001c
-    .code_RTCCInitClock.o       code   0x00e062    program   0x00001c
+             .stringtable    romdata   0x00de12    program   0x000063
+.romdata_RtccSetAlarmRpt.o    romdata   0x00de75    program   0x000000
+.idata_RtccSetAlarmRpt.o_i    romdata   0x00de75    program   0x000000
+.idata_RtccReadAlrmTimeDate.o_i    romdata   0x00de75    program   0x000000
+.idata_RtccReadTimeDate.o_i    romdata   0x00de75    program   0x000000
+.romdata_RtccReadAlrmTimeDate.o    romdata   0x00de75    program   0x000000
+      .idata_RtccWrOn.o_i    romdata   0x00de75    program   0x000000
+.idata_RtccWriteAlrmTimeDate.o_i    romdata   0x00de75    program   0x000000
+.romdata_RtccWriteAlrmTimeDate.o    romdata   0x00de75    program   0x000000
+.idata_RtccWriteTimeDate.o_i    romdata   0x00de75    program   0x000000
+      .idata_pw1setdc.o_i    romdata   0x00de75    program   0x000000
+      .idata_pw1setoc.o_i    romdata   0x00de75    program   0x000000
+      .romdata_pw1setoc.o    romdata   0x00de75    program   0x000000
+        .idata___init.o_i    romdata   0x00de75    program   0x000000
+        .romdata___init.o    romdata   0x00de75    program   0x000000
+         .idata_c018i.o_i    romdata   0x00de75    program   0x000000
+ .idata_RTCCInitClock.o_i    romdata   0x00de75    program   0x000000
+       .romdata_pw1open.o    romdata   0x00de75    program   0x000000
+       .idata_pw1open.o_i    romdata   0x00de75    program   0x000000
+      .romdata_fxd0808u.o    romdata   0x00de75    program   0x000000
+      .idata_fxd0808u.o_i    romdata   0x00de75    program   0x000000
+.idata_usb_function_cdc.o_i    romdata   0x00de75    program   0x000000
+          .idata_oled.o_i    romdata   0x00de75    program   0x000000
+    .romdata_usb_device.o    romdata   0x00de75    program   0x000000
+        .idata_mtouch.o_i    romdata   0x00de75    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x00de75    program   0x000000
+         .code_pw1setdc.o       code   0x00de76    program   0x00005e
+  .code_usb_descriptors.o       code   0x00de76    program   0x000000
+            .code_c018i.o       code   0x00de76    program   0x000000
+  .code_RtccSetAlarmRpt.o       code   0x00ded4    program   0x00005e
+         .code_pw1setoc.o       code   0x00df32    program   0x000058
+         .code_RtccWrOn.o       code   0x00df8a    program   0x000034
+          .code_pw1open.o       code   0x00dfbe    program   0x00002a
+                    CTYPE       code   0x00dfe8    program   0x000024
+                    .code       code   0x00e00c    program   0x000020
+             _startup_scn       code   0x00e02c    program   0x00001c
+         .code_fxd0808u.o       code   0x00e048    program   0x00001c
+    .code_RTCCInitClock.o       code   0x00e064    program   0x00001c
       .config_fff8_main.o    romdata   0x00fff8    program   0x000001
       .config_fff9_main.o    romdata   0x00fff9    program   0x000001
       .config_fffa_main.o    romdata   0x00fffa    program   0x000001
@@ -152,9 +152,10 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x00a018    program   0x000006
                             0x000008    0x000015      
                             0x000018    0x00001d      
                             0x00a000    0x00a00d      
-                            0x00a018    0x00e07d      
+                            0x00a018    0x00de74      
+                            0x00de76    0x00e07f      
                             0x00fff8    0x00ffff      
-            16534 out of 65538 program addresses used, program memory utilization is 25%
+            16535 out of 65538 program addresses used, program memory utilization is 25%
 
 
 
@@ -167,7 +168,7 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x00a018    program   0x000006
                 CDCInitEP   0x00cd1a    program     extern C:\Microchip Solutions v2011-10-18\Microchip\USB\CDC Device Driver\usb_function_cdc.c
              CDCTxService   0x00cffa    program     extern C:\Microchip Solutions v2011-10-18\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                   DelayMs   0x00c498    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\oled.c
-                 FXD0808U   0x00e046    program     extern C:\MCC18\v3_39\src\traditional\math\fxd0808u.c
+                 FXD0808U   0x00e048    program     extern C:\MCC18\v3_39\src\traditional\math\fxd0808u.c
               FillDisplay   0x00c6ba    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\oled.c
                  High_ISR   0x000008    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                   InitADC   0x00d15c    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\mtouch.c
@@ -175,22 +176,22 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x00a018    program   0x000006
          InitializeSystem   0x00b2f4    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                   Low_ISR   0x000018    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                   OneByte   0x00d814    program     static C:\MCC18\v3_39\src\traditional\stdclib\itobcd.asm
-                 OpenPWM1   0x00dfbc    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1open.c
+                 OpenPWM1   0x00dfbe    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1open.c
                 ProcLower   0x00d7c8    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
                 ProcUpper   0x00d7be    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
                 ProcessIO   0x00bb36    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
         Remapped_High_ISR   0x00a008    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
          Remapped_Low_ISR   0x00a018    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
               ResetDevice   0x00c4f0    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\oled.c
-            RtccInitClock   0x00e062    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RTCCInitClock.c
+            RtccInitClock   0x00e064    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RTCCInitClock.c
      RtccReadAlrmTimeDate   0x00dda2    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccReadAlrmTimeDate.c
          RtccReadTimeDate   0x00da40    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccReadTimeDate.c
-          RtccSetAlarmRpt   0x00ded2    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccSetAlarmRpt.c
-                 RtccWrOn   0x00df88    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWrOn.c
+          RtccSetAlarmRpt   0x00ded4    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccSetAlarmRpt.c
+                 RtccWrOn   0x00df8a    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWrOn.c
     RtccWriteAlrmTimeDate   0x00d826    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWriteAlrmTimeDate.c
         RtccWriteTimeDate   0x00d57e    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWriteTimeDate.c
-                SetDCPWM1   0x00de74    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setdc.c
-            SetOutputPWM1   0x00df30    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setoc.c
+                SetDCPWM1   0x00de76    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setdc.c
+            SetOutputPWM1   0x00df32    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setoc.c
                  TstLower   0x00d7b2    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
                  TstUpper   0x00d7ac    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
        USBCBCheckOtherReq   0x00c3dc    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
@@ -288,10 +289,10 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
            ___if_lbl00092   0x00c278    program     static                          
        ___return_lbl00000   0x00a004    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x00dfac    program     static                          
-       ___return_lbl00000   0x00e060    program     static                          
+       ___return_lbl00000   0x00dfae    program     static                          
+       ___return_lbl00000   0x00e062    program     static                          
        ___return_lbl00001   0x00a00c    program     static                          
-       ___return_lbl00001   0x00e044    program     static                          
+       ___return_lbl00001   0x00e046    program     static                          
        ___return_lbl00002   0x00a01c    program     static                          
        ___return_lbl00002   0x00dd1e    program     static                          
        ___return_lbl00003   0x00000c    program     static                          
@@ -327,9 +328,9 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
                    __pa_2   0x00d948    program     static C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWriteAlrmTimeDate.c
                    __pa_3   0x00db0e    program     static C:\MCC18\v3_39\src\pmc_common\rtcc\RtccReadTimeDate.c
                    __pa_3   0x00d6ea    program     static C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWriteTimeDate.c
-              __string_11   0x00de6d    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-              __string_12   0x00de61    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-              __string_13   0x00de4e    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
+              __string_11   0x00de6e    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
+              __string_12   0x00de62    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
+              __string_13   0x00de4f    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
               __string_14   0x00de42    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
               __string_15   0x00de2c    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
               __string_16   0x00de27    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
@@ -360,14 +361,14 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
                __tmplbl_7   0x00bcc4    program     static                          
                __tmplbl_8   0x00bc9a    program     static                          
                __tmplbl_9   0x00bc98    program     static                          
-            __zero_memory   0x00e00a    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+            __zero_memory   0x00e00c    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
                 _do_cinit   0x00dc82    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                    _reset   0x00a000    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-                 _startup   0x00e02a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 _startup   0x00e02c    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
                  alarmstr   0x00dc6c    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                      btoh   0x00b4ca    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-                compare_l   0x00e020    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                compare_l   0x00e022    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
         configDescriptor1   0x00db2a    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\usb_descriptors.c
                    coordh   0x00dc72    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                 copy_loop   0x00dcf4    program     static                          
@@ -376,11 +377,11 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
                      done   0x00dd1e    program     static                          
              done_copying   0x00dd08    program     static                          
                     dttoa   0x00b92a    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-                  endloop   0x00e05c    program     static                          
+                  endloop   0x00e05e    program     static                          
                 g_pucFont   0x00d3a2    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\oled.c
              getsUSBUSART   0x00ce0a    program     extern C:\Microchip Solutions v2011-10-18\Microchip\USB\CDC Device Driver\usb_function_cdc.c
                helpstring   0x00dbe1    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-                  isprint   0x00dfe6    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
+                  isprint   0x00dfe8    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
                    itoBCD   0x00d7d2    program     extern C:\MCC18\v3_39\src\traditional\stdclib\itobcd.asm
                      itoa   0x00d6f2    program     extern C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
                      jDo1   0x00d778    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
@@ -396,14 +397,14 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
                     jLoop   0x00dd96    program     static C:\MCC18\v3_39\src\traditional\stdclib\strlen.asm
                     jLoop   0x00dd34    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
                     jLoop   0x00dd7a    program     static C:\MCC18\v3_39\src\traditional\stdclib\scpyp2r.asm
-                   jMatch   0x00e006    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
-                 jNoMatch   0x00e008    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
+                   jMatch   0x00e008    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
+                 jNoMatch   0x00e00a    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
                 jTstLowZ1   0x00d7bc    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
                 jTstSign1   0x00d71e    program     static C:\MCC18\v3_39\src\traditional\stdclib\itoa.asm
-                     loop   0x00e03a    program     static                          
-                     loop   0x00e04e    program     static                          
-                   loop_h   0x00e018    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
-                   loop_l   0x00e022    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                     loop   0x00e03c    program     static                          
+                     loop   0x00e050    program     static                          
+                   loop_h   0x00e01a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                   loop_l   0x00e024    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
           mTouchCalibrate   0x00d266    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\mtouch.c
                mTouchInit   0x00d190    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\mtouch.c
          mTouchReadButton   0x00d196    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\mtouch.c
@@ -438,7 +439,7 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
                      test   0x00dc9c    program     static                          
                     tmtoa   0x00ba42    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                     xxstr   0x00dc69    program     extern C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-               zero_block   0x00e018    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+               zero_block   0x00e01a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
                    ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
                ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
                    ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
@@ -1242,31 +1243,31 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x00c402    program     extern C:\Microchip So
               __string_16   0x00de27    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
               __string_15   0x00de2c    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
               __string_14   0x00de42    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-              __string_13   0x00de4e    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-              __string_12   0x00de61    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-              __string_11   0x00de6d    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
-                SetDCPWM1   0x00de74    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setdc.c
-          RtccSetAlarmRpt   0x00ded2    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccSetAlarmRpt.c
-            SetOutputPWM1   0x00df30    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setoc.c
-                 RtccWrOn   0x00df88    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWrOn.c
-       ___return_lbl00000   0x00dfac    program     static                          
-                 OpenPWM1   0x00dfbc    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1open.c
-                  isprint   0x00dfe6    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
-                   jMatch   0x00e006    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
-                 jNoMatch   0x00e008    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
-            __zero_memory   0x00e00a    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
-               zero_block   0x00e018    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
-                   loop_h   0x00e018    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
-                compare_l   0x00e020    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
-                   loop_l   0x00e022    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
-                 _startup   0x00e02a    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
-                     loop   0x00e03a    program     static                          
-       ___return_lbl00001   0x00e044    program     static                          
-                 FXD0808U   0x00e046    program     extern C:\MCC18\v3_39\src\traditional\math\fxd0808u.c
-                     loop   0x00e04e    program     static                          
-                  endloop   0x00e05c    program     static                          
-       ___return_lbl00000   0x00e060    program     static                          
-            RtccInitClock   0x00e062    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RTCCInitClock.c
+              __string_13   0x00de4f    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
+              __string_12   0x00de62    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
+              __string_11   0x00de6e    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
+                SetDCPWM1   0x00de76    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setdc.c
+          RtccSetAlarmRpt   0x00ded4    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccSetAlarmRpt.c
+            SetOutputPWM1   0x00df32    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1setoc.c
+                 RtccWrOn   0x00df8a    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RtccWrOn.c
+       ___return_lbl00000   0x00dfae    program     static                          
+                 OpenPWM1   0x00dfbe    program     extern C:\MCC18\v3_39\src\pmc_common\PWM\pw1open.c
+                  isprint   0x00dfe8    program     extern C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
+                   jMatch   0x00e008    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
+                 jNoMatch   0x00e00a    program     static C:\MCC18\v3_39\src\traditional\stdclib\isprint.asm
+            __zero_memory   0x00e00c    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+               zero_block   0x00e01a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                   loop_h   0x00e01a    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                compare_l   0x00e022    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                   loop_l   0x00e024    program     static C:\MCC18\v3_39\src\traditional\proc\p18F46J50.asm
+                 _startup   0x00e02c    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x00e03c    program     static                          
+       ___return_lbl00001   0x00e046    program     static                          
+                 FXD0808U   0x00e048    program     extern C:\MCC18\v3_39\src\traditional\math\fxd0808u.c
+                     loop   0x00e050    program     static                          
+                  endloop   0x00e05e    program     static                          
+       ___return_lbl00000   0x00e062    program     static                          
+            RtccInitClock   0x00e064    program     extern C:\MCC18\v3_39\src\pmc_common\rtcc\RTCCInitClock.c
                __config_0   0x00fff8    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                __config_1   0x00fff9    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
                __config_2   0x00fffa    program     static C:\Microchip Solutions v2011-10-18\PIC18F Starter Kit 1\Demos\Customer Submissions\Contest 1\RTCC\firmware\main.c
