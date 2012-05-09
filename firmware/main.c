@@ -888,8 +888,7 @@ void ProcessIO(void)
             }
 	}
 	if(!screenvalid)
-	{
-            oledPutROMString((ROM_STRING)"Main Screen",7,0);
+	{            
 	    oledPutROMString((ROM_STRING)"Wake up Robot Demo",2,18);
     	    screenvalid=1;
         }
