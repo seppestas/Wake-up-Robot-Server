@@ -908,7 +908,7 @@ void ProcessIO(void)
 		screenvalid=0;                
 		//USBCBSendResume();
 	}
-	else if(alarmcnt>100)
+	else if(alarmcnt>400)
 	{
 		alarmcnt=0;
 		screenvalid=0;
